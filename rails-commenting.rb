@@ -7,56 +7,56 @@
 # FILE: app/controller/blog_posts_controller.rb
 
 # ---1)
-class BlogPostsController < ApplicationController
-  def index
+class BlogPostsController < ApplicationController ## class function
+  def index ## index function
     # ---2)
-    @posts = BlogPost.all
+    @posts = BlogPost.all ###look for all the blog post and store it in @posts
   end
 
   # ---3)
-  def show
-    @post = BlogPost.find(params[:id])
+  def show ## show function
+    @post = BlogPost.find(params[:id]) ### find post as per provided id and store it in @post
   end
 
   # ---4)
-  def new
-    @post = BlogPost.new
+  def new ## new function
+    @post = BlogPost.new ## initialize a new blog post and store it in @post
   end
 
-  def create
+  def create ### defining create function 
     # ---5)
-    @post = BlogPost.create(blog_post_params)
-    if @post.valid?
-      redirect_to blog_post_path(@post)
+    @post = BlogPost.create(blog_post_params) ### create a new blog post as per params and store it in @post
+    if @post.valid? ### check if blog post is valid
+      redirect_to blog_post_path(@post) ### redirect to show page of that blog post 
     end
   end
 
-  def edit
+  def edit ### defining edit function
     # ---6)
-    @post = BlogPost.find(params[:id])
+    @post = BlogPost.find(params[:id]) ### Find blog post as per provided id and store it in @post
   end
 
-  def update
-    @post = BlogPost.find(params[:id])
+  def update ### defining update function
+    @post = BlogPost.find(params[:id])  ### Find blog post as per provided id and store it in
     # ---7)
-    @post.update(blog_post_params)
-    if @post.valid?
-      redirect_to blog_post_path(@post)
+    @post.update(blog_post_params) ### update the blog post as per params
+    if @post.valid? ### check if blog post is valid
+      redirect_to blog_post_path(@post) ### redirect to show page of that blog post
     end
   end
 
-  def destroy
-    @post = BlogPost.find(params[:id])
-    if @post.destroy
+  def destroy ### defining destroy function 
+    @post = BlogPost.find(params[:id]) ### find blog post as per provided id and store it in @post
+    if @post.destroy ### destroy the blog post 
       # ---8)
-      redirect_to blog_posts_path
+      redirect_to blog_posts_path ## redirect to index page
     end
   end
 
   # ---9)
-  private
-  def blog_post_params
+  private ### start the private block
+  def blog_post_params ### defining blog_post_params function
     # ---10)
-    params.require(:blog_post).permit(:title, :content)
+    params.require(:blog_post).permit(:title, :content) ### permit the title and content params 
   end
 end

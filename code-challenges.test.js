@@ -62,7 +62,6 @@ describe("report", () => {
 // Nxt I will be calling the dividedByThree function and storing the result in result1 & result2.
 
 // a) Create a test with an expect statement using the variables provided.
-
 const hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false];
 // Expected output: [ 2, 0, -1, 0 ]
 const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true];
@@ -80,26 +79,22 @@ describe("dividedByThree", () => {
 });
 
 // b) Create the function that makes the test pass.
-
 const dividedByThree = (array) => {
   return array.filter((item) => typeof item === "number" && item % 3);
 };
 
 // --------------------3) Create a function that takes in an array of numbers and returns the sum of all the numbers cubed.
-
 // Pseudo Code:
 // Create a function that takes in an array of numbers
 // returns the sum of all the numbers cubed
 
 // a) Create a test with an expect statement using the variables provided.
-
 const cubeAndSum1 = [2, 3, 4];
 // Expected output: 99
 const cubeAndSum2 = [0, 5, 10];
 // Expected output: 1125
 
 // b) Create the function that makes the test pass.
-
 const numCubes = (array) => {
   // Define function numCubes
   let total = 0; // Initialize total variable with 0

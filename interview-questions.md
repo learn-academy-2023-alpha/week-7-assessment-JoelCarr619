@@ -10,7 +10,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 Your answer: unfortuantly I am unable to answer this question at the moment, I will get back to you with that answer.
 
-Researched answer:
+Researched answer: unfortuantly I am unable to answer this question at the moment, I will get back to you with that answer.
 
 2. Which RESTful routes must always be passed params? Why?
 
@@ -61,6 +61,22 @@ action: "DELETE" location: /students/2
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
 
-1.Title -
+1. As a user, I want to start up my computer, so that I can see my work for the day
 
-1. Description -
+1. As a user, I want to review the last hour of yesterdays work so that it doesn't conflit with today's work
+
+1. As a user, I want to check my emails for the start of the day
+
+1. As a user, I want to create a mini time frame check list for today's task.
+
+1. As a user, I want to reach out to make sure I am taking a break from my computer screen.
+
+1. As a user, I want to check up with my co-workers to see if they may need assistance with their work.
+
+1. As a user, I want to make sure I am on track with my workflow
+
+1. As a user, I want to reach out to my supervisors and leadership regarding workflow and other work topics
+
+1. As a user, I want to make sure I am taking my lunch, to re-enigerize my body to continue for the rest of the day.
+
+1. As a user, I want to review my check-list to make sure everything has been completed before I end my day or shut down my computer.
